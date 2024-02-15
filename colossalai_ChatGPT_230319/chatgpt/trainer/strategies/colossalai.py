@@ -15,7 +15,7 @@ from colossalai.zero import GeminiDDP as ZeroDDP
 from colossalai.zero import get_static_torch_model, zero_model_wrapper, zero_optim_wrapper
 from colossalai.legacy.tensor import ProcessGroup, ShardSpec
 from colossalai.utils import get_current_device
-from colossalai.utils.model.colo_init_context import ColoInitContext
+from colossalai.legacy.zero.gemini.colo_init_context import ColoInitContext
 
 from .base import Strategy
 from .ddp import DDPStrategy
