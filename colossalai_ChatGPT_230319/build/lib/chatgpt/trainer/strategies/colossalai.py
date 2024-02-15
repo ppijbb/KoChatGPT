@@ -12,7 +12,7 @@ from torch.optim import Optimizer
 import colossalai
 from colossalai.nn.optimizer import CPUAdam, HybridAdam
 from colossalai.zero import GeminiDDP as ZeroDDP
-from colossalai.nn.zero import get_static_torch_model, zero_model_wrapper, zero_optim_wrapper
+from colossalai.zero import get_static_torch_model, zero_model_wrapper, zero_optim_wrapper
 from colossalai.tensor import ProcessGroup, ShardSpec
 from colossalai.utils import get_current_device
 from colossalai.utils.model.colo_init_context import ColoInitContext
